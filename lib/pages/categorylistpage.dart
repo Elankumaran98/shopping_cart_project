@@ -3,6 +3,7 @@ import 'package:shopping_cart_project/helpers/utils.dart';
 import 'package:shopping_cart_project/models/category.dart';
 import 'package:shopping_cart_project/widgets/categorycard.dart';
 
+// ignore: must_be_immutable
 class CategoryListPage extends StatelessWidget {
   List<Category> categories = Utils.getMockedCategories();
   @override
@@ -26,7 +27,7 @@ class CategoryListPage extends StatelessWidget {
                 child: ListView.builder(
                     itemCount: categories.length,
                     itemBuilder: (BuildContext ctx, int index) {
-                      return CategoryCard(                      );
+                      return CategoryCard();
                     }))
           ],
         ),

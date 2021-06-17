@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/models/category.dart';
 import 'package:shopping_cart_project/widgets/categoryicon.dart';
 
+// ignore: must_be_immutable
 class CategoryCard extends StatelessWidget {
   Category category;
   Function onCardClick;

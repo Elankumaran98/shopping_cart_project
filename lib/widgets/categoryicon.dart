@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/widgets/iconfont.dart';
 
+// ignore: must_be_immutable
 class CategoryIcon extends StatelessWidget {
   Color color;
   String iconName;
