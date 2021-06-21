@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/utils.dart';
 import 'package:shopping_cart_project/models/category.dart';
+import 'package:shopping_cart_project/pages/selectedcategorypage.dart';
 import 'package:shopping_cart_project/widgets/categorybottombar.dart';
 import 'package:shopping_cart_project/widgets/categorycard.dart';
+import 'package:shopping_cart_project/widgets/mainappbar.dart';
 
 // ignore: must_be_immutable
 class CategoryListPage extends StatelessWidget {
@@ -11,7 +13,10 @@ class CategoryListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
-      appBar: AppBar(),
+      // ignore: missing_required_param
+      appBar: PreferredSize(
+        child: MainAppBar(),
+      ),
       body: Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,7 +33,18 @@ class CategoryListPage extends StatelessWidget {
                 child: ListView.builder(
                     itemCount: categories.length,
                     itemBuilder: (BuildContext ctx, int index) {
-                      return CategoryCard();
+                      return CategoryCard(
+                        category: categories[index],
+                        onCardClick: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SelectedCategoryPage(
+                                        selectedCategory:
+                                            this.categories[index],
+                                      )));
+                        },
+                      );
                     })),
             CategoryBottomBar()
           ],
