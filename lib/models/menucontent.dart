@@ -1,8 +1,8 @@
-class OnboardingContent {
+class MenuContent {
   String message;
   String img;
 
-  OnboardingContent({
+  MenuContent({
     this.message, this.img
   });
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/unitnums.dart';
 import 'package:shopping_cart_project/models/category.dart';
 import 'package:shopping_cart_project/models/categorypart.dart';
-import 'package:shopping_cart_project/models/onboardingcontent.dart';
+import 'package:shopping_cart_project/models/menucontent.dart';
 import 'package:shopping_cart_project/models/subcategory.dart';
 
 
@@ -10,17 +10,17 @@ import 'appcolors.dart';
 import 'iconhelper.dart';
 
 class Utils {
-  static List<OnboardingContent> getOnboarding() {
+  static List<MenuContent> getMenu() {
     return [
-      OnboardingContent(
+      MenuContent(
         message: 'Products\nfrescoes, of the\nearth to your table',
         img: 'onboard1'
       ),
-      OnboardingContent(
+      MenuContent(
         message: 'Meat and sausages\nfresh and healthy\nto your delight',
         img: 'onboard2'
       ),
-      OnboardingContent(
+      MenuContent(
         message: 'Get them from\nthe comfort of your\nmobile device',
         img: 'onboard3'
       )

@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/iconhelper.dart';
 import 'package:shopping_cart_project/widgets/iconfont.dart';
@@ -14,7 +12,7 @@ class MainAppBar extends StatefulWidget {
   @override
   _MainAppBarState createState() => _MainAppBarState();
 
-  @override
+  // ignore: non_constant_identifier_names
   Size get PreferredSize => new Size.fromHeight(80);
 }
 

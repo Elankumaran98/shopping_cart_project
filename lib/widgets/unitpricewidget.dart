@@ -3,6 +3,7 @@ import 'package:shopping_cart_project/helpers/appcolors.dart';
 import 'package:shopping_cart_project/helpers/unitnums.dart';
 import 'package:shopping_cart_project/helpers/utils.dart';
 
+// ignore: must_be_immutable
 class UnitPriceWidget extends StatefulWidget {
   Color themeColor;
   int amount = 0;

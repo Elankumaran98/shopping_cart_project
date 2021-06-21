@@ -73,7 +73,12 @@ class WelcomePage extends StatelessWidget {
                           highlight: AppColors.MAIN_COLOR.withOpacity(0.5),
                           borderColor: AppColors.MAIN_COLOR,
                           borderWidth: 4,
-                          onClick: () {})
+                          onClick: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CategoryListPage()));
+                          })
                     ],
                   ),
                 )

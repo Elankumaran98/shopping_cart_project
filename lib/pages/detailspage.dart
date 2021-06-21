@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/appcolors.dart';
 import 'package:shopping_cart_project/helpers/utils.dart';
 import 'package:shopping_cart_project/models/subcategory.dart';
-import 'package:shopping_cart_project/pages/mappage.dart';
 import 'package:shopping_cart_project/widgets/categoryicon.dart';
 import 'package:shopping_cart_project/widgets/categorypartslist.dart';
 import 'package:shopping_cart_project/widgets/mainappbar.dart';
 import 'package:shopping_cart_project/widgets/themebutton.dart';
 import 'package:shopping_cart_project/widgets/unitpricewidget.dart';
+import 'mappage.dart';
 
 // ignore: must_be_immutable
 class DetailsPage extends StatefulWidget {
