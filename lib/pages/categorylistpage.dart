@@ -12,7 +12,9 @@ class CategoryListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Text("Elankumaran",style: TextStyle(fontFamily: 'monospace'),),
+      ),
       // ignore: missing_required_param
       appBar: PreferredSize(
         child: MainAppBar(),

@@ -13,8 +13,8 @@ class SelectedCategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        // ignore: missing_required_param
         appBar: PreferredSize(
-          preferredSize: null,
           child: MainAppBar(),
         ),
         body: Container(

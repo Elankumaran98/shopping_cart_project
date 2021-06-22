@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/appcolors.dart';
 import 'package:shopping_cart_project/helpers/iconhelper.dart';
-import 'package:shopping_cart_project/pages/categorylistpage.dart';
+import 'package:shopping_cart_project/pages/login/authentication/loginpage.dart';
+import 'package:shopping_cart_project/pages/menupage.dart';
 import 'package:shopping_cart_project/widgets/iconfont.dart';
 import 'package:shopping_cart_project/widgets/themebutton.dart';
 
@@ -58,13 +59,13 @@ class WelcomePage extends StatelessWidget {
                           onClick: () {}),
                       ThemeButton(
                           labal: "Menu",
-                          highlight: Colors.green,
+                          highlight: Colors.green[900],
                           color: AppColors.DARK_GREEN,
                           onClick: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CategoryListPage()));
+                                    builder: (context) => MenuPage()));
                           }),
                       ThemeButton(
                           labal: "LogIn",
@@ -77,7 +78,7 @@ class WelcomePage extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CategoryListPage()));
+                                    builder: (context) => LoginPage()));
                           })
                     ],
                   ),
