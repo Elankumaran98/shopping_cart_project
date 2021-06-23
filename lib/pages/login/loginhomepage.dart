@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_cart_project/pages/login/authentication/loginpage.dart';
+import 'package:shopping_cart_project/pages/login/authentication/authenticationpage.dart';
 import 'package:shopping_cart_project/pages/login/errorpage.dart';
 import 'package:shopping_cart_project/pages/login/loadingpage.dart';
 
@@ -18,7 +18,7 @@ class LoginHomePage extends StatelessWidget {
           } else if (snapshot.hasData) {
             return MaterialApp(
               theme: ThemeData(primarySwatch: Colors.red),
-              home: LoginPage(),
+              home: AuthenticationPage(),
             );
           } else {
             return LoadingPage();

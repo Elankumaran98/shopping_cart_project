@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_cart_project/helpers/appcolors.dart';
 import 'package:shopping_cart_project/helpers/iconhelper.dart';
-import 'package:shopping_cart_project/pages/login/authentication/loginpage.dart';
+import 'package:shopping_cart_project/pages/login/authentication/authenticationpage.dart';
 import 'package:shopping_cart_project/pages/menupage.dart';
 import 'package:shopping_cart_project/widgets/iconfont.dart';
 import 'package:shopping_cart_project/widgets/themebutton.dart';
@@ -78,7 +78,7 @@ class WelcomePage extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => LoginPage()));
+                                    builder: (context) => AuthenticationPage()));
                           })
                     ],
                   ),

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_cart_project/pages/login/authentication/loginpage.dart';
 
-class LoginPage extends StatefulWidget {
-  
-
+class RegisterPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _RegisterPageState createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   TextEditingController _emailController;
   TextEditingController _passwordController;
   final _formKey = GlobalKey<FormState>();
@@ -48,13 +47,13 @@ class _LoginPageState extends State<LoginPage> {
                     height: 60,
                   ),
                   Text(
-                    "Welcome Back",
+                    "Welcome",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   SizedBox(
                     height: 10,
                   ),
-                  Text("SignIn",
+                  Text("Register",
                       style: TextStyle(color: Colors.grey, fontSize: 15)),
                   SizedBox(
                     height: 30,
@@ -100,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: Text(
-                      "Login",
+                      "Register",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
@@ -111,17 +110,20 @@ class _LoginPageState extends State<LoginPage> {
                   Row(
                     children: [
                       Text(
-                        "Don't have an Account?",
+                        "Already have an Account?",
                       ),
                       SizedBox(
                         width: 5,
                       ),
                       TextButton(
                           onPressed: () {
-                            Navigator.pop(context);
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
                           },
                           child: Text(
-                            "Register",
+                            "Login",
                           ))
                     ],
                   )
